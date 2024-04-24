@@ -3,7 +3,6 @@
 #include <math.h>
 #include <time.h>
 
-#define N 1410065408 // Number of intervals
 
 double f(double x) {
     return sin(x);

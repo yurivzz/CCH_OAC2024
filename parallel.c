@@ -4,7 +4,6 @@
 #include <omp.h>
 #include <time.h>
 
-#define N 1410065408
 
 double f(double x) {
     return sin(x);
