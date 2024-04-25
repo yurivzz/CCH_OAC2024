@@ -11,7 +11,7 @@ def get_data(threads):
     clock = []
     tmp = ''
     cont = 0
-    for n in range(0, 2):
+    for n in range(0, 8):
         a = pow(10,n)
         slices.append(a)
         if threads == 0:
@@ -42,9 +42,9 @@ def get_data(threads):
     if(threads == 0):
         print('Execução sequencial')
         print('slicesSequencial = '+str(slices))
-        print('resultSequencial = '+str(slices))
-        print('timeSequencial = '+str(slices))
-        print('clockSequencial = '+str(slices))
+        print('resultSequencial = '+str(result))
+        print('timeSequencial = '+str(time))
+        print('clockSequencial = '+str(clock))
     else:
         print('Execução com '+str(threads)+' threads')
         print('slices'+str(threads)+'threads = '+str(slices))
