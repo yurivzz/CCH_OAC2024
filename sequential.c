@@ -10,10 +10,11 @@ double f(double x) {
 
 double trapezoidal_rule_sequential(double a, double b, int n) {
     double h = (b - a) / n;
-    double sum = 0.5 * (f(a) + f(b));
+    double sum = 0.5 * (sin(a) + sin(b));
+    double x = 0.0;
     for (int i = 1; i < n; i++) {
-        double x = a + i * h;
-        sum += f(x);
+        x = a + i * h;
+        sum += sin(x);
     }
     return h * sum;
 }
